@@ -27,9 +27,7 @@
       "keepTime": true,
       "tags": [
         "hashicorp",
-        "vault",
-        "integrated-storage",
-        "raft"
+        "vault"
       ],
       "targetBlank": true,
       "title": "Dashboards",
@@ -925,7 +923,7 @@
       "type": "timeseries"
     }
   ],
-  "refresh": "",
+  "refresh": "5s",
   "schemaVersion": 39,
   "tags": [
     "hashicorp",
@@ -1045,6 +1043,6 @@
   "timezone": "browser",
   "title": "Vault - Node Stats",
   "uid": "edtba3d1kshkwe",
-  "version": 11,
+  "version": 12,
   "weekStart": ""
 }
