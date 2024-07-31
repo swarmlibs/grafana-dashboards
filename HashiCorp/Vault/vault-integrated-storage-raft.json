@@ -18,7 +18,6 @@
   "editable": true,
   "fiscalYearStartMonth": 0,
   "graphTooltip": 1,
-  "id": 11,
   "links": [
     {
       "asDropdown": false,
@@ -2564,13 +2563,13 @@
     ]
   },
   "time": {
-    "from": "now-30m",
+    "from": "now-1h",
     "to": "now"
   },
   "timepicker": {},
   "timezone": "browser",
   "title": "Vault - Integrated Storage (Raft)",
   "uid": "ddt7gyrht3i80d",
-  "version": 44,
+  "version": 45,
   "weekStart": ""
 }

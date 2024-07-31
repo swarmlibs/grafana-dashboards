@@ -18,7 +18,6 @@
   "editable": true,
   "fiscalYearStartMonth": 0,
   "graphTooltip": 1,
-  "id": 14,
   "links": [
     {
       "asDropdown": false,
@@ -698,7 +697,7 @@
             "uid": "promstack-prometheus"
           },
           "editorMode": "code",
-          "expr": "vault_identity_entity_count{job=\"$job\", namespace=\"$namespace\"} + 0",
+          "expr": "sum(vault_identity_entity_count{job=\"$job\", namespace=\"$namespace\"} + 0)",
           "instant": false,
           "legendFormat": "entity",
           "range": true,
@@ -710,7 +709,7 @@
             "uid": "${datasource}"
           },
           "editorMode": "code",
-          "expr": "vault_identity_entity_alias_count{job=\"$job\", namespace=\"$namespace\"} + 0",
+          "expr": "sum(vault_identity_entity_alias_count{job=\"$job\", namespace=\"$namespace\"} + 0)",
           "hide": false,
           "instant": false,
           "legendFormat": "alias",
@@ -794,7 +793,7 @@
             "uid": "promstack-prometheus"
           },
           "editorMode": "code",
-          "expr": "vault_identity_upsert_entity_txn{job=\"$job\", namespace=\"$namespace\", quantile=\"0.9\"}",
+          "expr": "sum(vault_identity_upsert_entity_txn{job=\"$job\", namespace=\"$namespace\", quantile=\"0.9\"})",
           "instant": false,
           "legendFormat": "entity",
           "range": true,
@@ -806,7 +805,7 @@
             "uid": "${datasource}"
           },
           "editorMode": "code",
-          "expr": "vault_identity_upsert_group_txn{job=\"$job\", namespace=\"$namespace\", quantile=\"0.9\"}",
+          "expr": "sum(vault_identity_upsert_group_txn{job=\"$job\", namespace=\"$namespace\", quantile=\"0.9\"})",
           "hide": false,
           "instant": false,
           "legendFormat": "group",
@@ -1130,6 +1129,6 @@
   "timezone": "browser",
   "title": "Vault - Stats",
   "uid": "edtb2z044pm2oa",
-  "version": 49,
+  "version": 51,
   "weekStart": ""
 }
